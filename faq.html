@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>FAQ Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Style.css">
+    <script src="wwwroot/lib/bootstrap/dist/js/bootstrap.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+    <script>
+
+        $(document).ready(function () {
+            // Add minus icon for collapse element which is open by default
+            $(".collapse.show").each(function () {
+                $(this).prev(".card-header").find(".arrow").addClass("flip").removeClass("arrow-down");
+            });
+
+            // Toggle plus minus icon on show hide of collapse element
+            $(".collapse").on('show.bs.collapse', function () {
+                $(this).prev(".card-header").find(".arrow").removeClass("arrow-down").addClass("flip");
+            }).on('hide.bs.collapse', function () {
+                $(this).prev(".card-header").find(".arrow").removeClass("flip").addClass("arrow-down");
+            });
+        });
+
+    </script>
+</head>
+<body>
+    <!-- Banner -->
+    <div class="container-fluid faq-banner">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+                <img src="../Images/menu.svg" />
+
+            </button>
+
+            <div class="collapse navbar-collapse Line" id="navbarSupportedContent">
+                <img src="../Images/logo_1.png" class="banner-logo mr-5" />
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item pr-5">
+                        <a class="nav-link text-uppercase text-white" href="#">how it works</a>
+                    </li>
+                    <li class="nav-item pr-5">
+                        <a class="nav-link text-uppercase text-white" href="contact.html">contact us</a>
+                    </li>
+                </ul>
+                <form class="form-inline mt-4 my-lg-0">
+                    <button class="btn my-sm-0 text-white border-light">Login</button>
+                </form>
+            </div>
+        </nav>
+        <hr />
+        <div class="faq-header">FAQ</div>
+    </div>
+
+    <!-- Accordion -->
+    <div class="container">
+        <div class="bs-example">
+            <div class="accordion" id="accordionExample">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+
+                        <div class="accordian-header">
+                            <h4>How are projects choosen for Volunteer Overseas ? </h4>
+                        </div>
+                        <div class="child">
+                            <a data-toggle="collapse" href="#collapseOne">
+                                <img src="../Images/arrow-toggle.png" class="arrow-down arrow" />
+                            </a>
+                        </div>
+                    </div>
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <div class="content">
+                                <h3>Volunteer Overseas partners with reputable organization worlwide that offer meaningfull volunteer,intern,</h3>
+                                <h3>and teach abroad trips.We want to make sure that any program you sign up for is well-organized,safe,and</h3>
+                                <h3>impactful.A  few things we look for in our partner organization include:</h3><br />
+                                <h3>-History and leadership</h3>
+                                <h3>-Award,accreditation,and accolades</h3>
+                                <h3>-Participant safety and support</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+
+                        <div class="accordian-header">
+                            <h4>How are projects choosen for Volunteer Overseas ? </h4>
+                        </div>
+                        <div class="child">
+                            <a data-toggle="collapse" href="#collapseTwo">
+                                <img src="../Images/arrow-toggle.png" class="arrow-down arrow" />
+                            </a>
+                        </div>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <div class="content">
+                                <h3>Volunteer Overseas partners with reputable organization worlwide that offer meaningfull volunteer,intern,</h3>
+                                <h3>and teach abroad trips.We want to make sure that any program you sign up for is well-organized,safe,and</h3>
+                                <h3>impactful.A  few things we look for in our partner organization include:</h3><br />
+                                <h3>-History and leadership</h3>
+                                <h3>-Award,accreditation,and accolades</h3>
+                                <h3>-Participant safety and support</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+
+                        <div class="accordian-header">
+                            <h4>How are projects choosen for Volunteer Overseas ? </h4>
+                        </div>
+                        <div class="child">
+                            <a data-toggle="collapse" href="#collapseThree">
+                                <img src="../Images/arrow-toggle.png" class="arrow-down arrow" />
+                            </a>
+                        </div>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <div class="content">
+                                <h3>Volunteer Overseas partners with reputable organization worlwide that offer meaningfull volunteer,intern,</h3>
+                                <h3>and teach abroad trips.We want to make sure that any program you sign up for is well-organized,safe,and</h3>
+                                <h3>impactful.A  few things we look for in our partner organization include:</h3><br />
+                                <h3>-History and leadership</h3>
+                                <h3>-Award,accreditation,and accolades</h3>
+                                <h3>-Participant safety and support</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <div class="card">
+                    <div class="card-header" id="headingFour">
+
+                        <div class="accordian-header">
+                            <h4>How are projects choosen for Volunteer Overseas ? </h4>
+                        </div>
+                        <div class="child">
+                            <a data-toggle="collapse" href="#collapseFour">
+                                <img src="../Images/arrow-toggle.png" class="arrow-down arrow" />
+                            </a>
+                        </div>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <div class="content">
+                                <h3>Volunteer Overseas partners with reputable organization worlwide that offer meaningfull volunteer,intern,</h3>
+                                <h3>and teach abroad trips.We want to make sure that any program you sign up for is well-organized,safe,and</h3>
+                                <h3>impactful.A  few things we look for in our partner organization include:</h3><br />
+                                <h3>-History and leadership</h3>
+                                <h3>-Award,accreditation,and accolades</h3>
+                                <h3>-Participant safety and support</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <div class="card">
+                    <div class="card-header" id="headingFive">
+
+                        <div class="accordian-header">
+                            <h4>How are projects choosen for Volunteer Overseas ? </h4>
+                        </div>
+                        <div class="child">
+                            <a data-toggle="collapse" href="#collapseFive">
+                                <img src="../Images/arrow-toggle.png" class="arrow-down arrow" />
+                            </a>
+                        </div>
+                    </div>
+                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <div class="content">
+                                <h3>Volunteer Overseas partners with reputable organization worlwide that offer meaningfull volunteer,intern,</h3>
+                                <h3>and teach abroad trips.We want to make sure that any program you sign up for is well-organized,safe,and</h3>
+                                <h3>impactful.A  few things we look for in our partner organization include:</h3><br />
+                                <h3>-History and leadership</h3>
+                                <h3>-Award,accreditation,and accolades</h3>
+                                <h3>-Participant safety and support</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <div class="card">
+                    <div class="card-header" id="headingSix">
+
+                        <div class="accordian-header">
+                            <h4>How are projects choosen for Volunteer Overseas ? </h4>
+                        </div>
+                        <div class="child">
+                            <a data-toggle="collapse" href="#collapseSix">
+                                <img src="../Images/arrow-toggle.png" class="arrow-down arrow" />
+                            </a>
+                        </div>
+                    </div>
+                    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <div class="content">
+                                <h3>Volunteer Overseas partners with reputable organization worlwide that offer meaningfull volunteer,intern,</h3>
+                                <h3>and teach abroad trips.We want to make sure that any program you sign up for is well-organized,safe,and</h3>
+                                <h3>impactful.A  few things we look for in our partner organization include:</h3><br />
+                                <h3>-History and leadership</h3>
+                                <h3>-Award,accreditation,and accolades</h3>
+                                <h3>-Participant safety and support</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="Footer" style="width:100%;height:150px;">
+        <div class="container-fluid page-footer ">
+            <div class="footer-img">  <img src="images/logo_1.png" /></div>
+
+            <div class=" d-flex footer-content" style="float:right;">
+                <div> <a class="nav-link text-uppercase text-white" href="faq.html">faq</a></div>
+                <div><a class="nav-link text-uppercase text-white " href="contact.html">Contact Us</a></div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
