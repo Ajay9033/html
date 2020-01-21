@@ -12,7 +12,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-    height: 300px;
+    height: 400px;
     max-width: 100%;
 }
 /*.header-navbar{
@@ -31,7 +31,7 @@ hr {
 
 .Banner-header {
     font-size: 48px;
-    color: #ffffff;
+    color: white;
     font-weight: bold;
     position: absolute;
     left: 50%;
@@ -70,7 +70,10 @@ h1 {
     background-color: white;
 }
 
-
+    .view-photos img {
+        height :25px;
+        width:25px;
+    }
 
 
 .bt-banner-photo {
@@ -94,9 +97,10 @@ header nav {
 }
 
 .mapIcon {
-    height:25px;
+    height:30px;
     padding-bottom: 5px;
     padding-right: 5px;
+    margin-top:5px;
 }
 
 
@@ -114,6 +118,11 @@ header nav {
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
+#description h4
+{
+    margin-left:-10px;
+}
 /*.play-logo {
     width: 93px;
 }*/
@@ -121,6 +130,8 @@ header nav {
     display: flex;
     border-top: 1px solid #ccc;
     margin-bottom: 15px;
+   background-color:white;
+   font-weight:bold;
 }
 
     .navbar-header div {
@@ -207,13 +218,15 @@ h4 {
 
 .select
 {
-    height:30px;
+    height:50px;
     width:150px;
-    margin-top:-10px;
+   border-radius:4px 4px;
+   margin-top:-5px;
     
 }
 .cost-column1-img {
     align-content: center;
+    
 }
 
 .cost-div {
@@ -260,6 +273,7 @@ li div {
     background-color: #00acc1;
     padding: 5px 0px 5px 50px;
     font-size: 22px;
+    margin-right:2px;
 }
 
 
@@ -273,6 +287,13 @@ li div {
 
 .defference-content {
     padding: 15px 0px 18px 50px;
+   
+    
+}
+
+.defference-content div {
+    display:flex;
+    margin-bottom:5px;
 }
 
 .table td, th {
@@ -291,6 +312,7 @@ li div {
 .table-Sunday {
     color: #00acc1;
 }
+
 
 /*footer*/
 /*.page-footer {
@@ -314,7 +336,7 @@ li div {
     background: linear-gradient(90deg, rgba(104,104,108,1) 100%, rgba(0,212,255,1) 100%, rgba(22,20,51,1) 100%, rgba(15,13,46,1) 100%, rgba(9,133,171,1) 100%, rgba(158,158,166,1) 100%);
     background-size: cover;
     background-repeat: no-repeat;
-    position: relative;
+    position: absolute;
     max-width: 100%;
     height:90px;
 }
@@ -354,7 +376,20 @@ li div {
 
 @media (min-width: 320px) and (max-width: 480px) {
 
+    .Banner {
+        background-position: center;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0)0%, rgba(0, 0, 0, 0.06) 10%, rgba(0, 0, 0, 0.15) 22%, rgba(0, 0, 0, 0.72) 75%, rgba(0, 0, 0, 0.84) 89%, rgba(0, 0, 0, 0.91) 100%),url("Images/banner3.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        height: 300px;
+        max-width: 100%;
+    }
 
+    .navbar-header {
+        background-color: white;
+        font-weight: bold;
+    }
     .cost-div {
         display: flex;
         border: none;
@@ -380,11 +415,12 @@ li div {
 
 
 
-    .Banner-header {
+    .Banner-header div {
         font-size: 20px;
-        text-align: center;
-        max-width:50%;
-    }
+        font-weight:bold;
+       
+        }
+  
 
     .view-photos {
         position: absolute;
@@ -392,16 +428,22 @@ li div {
         right: 15px;
         left: unset;
         color: #00acc1;
-        font-size: 17px;
-        height: 50px;
-        width: 150px;
+        font-size: 12px;
+        height: 40px;
+        width: 130px;
         padding-top: 10px;
         padding-bottom: 19px;
         border-radius: 5px;
         background-color: white;
+        margin-top:20px;
        
     }
 
+    .view-photos img
+    {
+        height:15px;
+        width:15px;
+    }
     .play-logo {
         max-width: 60px;
         max-height: 60px;
@@ -431,6 +473,9 @@ li div {
     .khumasi {
         font-size: 16px;
         font-weight: bold;
+        padding-right:180px;
+        display:flex;
+        margin-bottom:10px;
     }
 
     .banner-logo {
@@ -482,11 +527,18 @@ li div {
     .page-footer {
         height: 80px;
     }
+    .responsive-view {
+        margin-bottom: 20px;
+       
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
 
-
+    .navbar-header {
+        background-color: white;
+        font-weight: bold;
+    }
     .cost-div {
         display: flex;
         border: 1px solid #ccc;
@@ -522,6 +574,28 @@ li div {
         border-radius: 5px;
         background-color: white;
     }
+
+    .footer-img img {
+        width: 135px;
+    }
+
+    .footer-content div a {
+        font-size: 13px;
+    }
+
+    .page-footer {
+        height: 80px;
+    }
+   .responsive-view
+   {
+       margin-bottom:100px;
+       
+   }
+   .Form
+   {
+       height:400px;
+   }
+
 }
 
 
@@ -529,7 +603,7 @@ li div {
 
 
 .Contact-banner {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0)0%, rgba(0, 0, 0, 0.06) 10%, rgba(0, 0, 0, 0.15) 22%, rgba(0, 0, 0, 0.72) 75%, rgba(0, 0, 0, 0.84) 89%, rgba(0, 0, 0, 0.91) 100%),url("../Images/contact-banner.jpg");
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0)0%, rgba(0, 0, 0, 0.06) 10%, rgba(0, 0, 0, 0.15) 22%, rgba(0, 0, 0, 0.72) 75%, rgba(0, 0, 0, 0.84) 89%, rgba(0, 0, 0, 0.91) 100%),url("images/contact-banner.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -575,11 +649,23 @@ hr {
 
 
 @media (min-width: 768px) and (max-width: 1024px) {
-    .form-row
-    {
-        display:flex;
-        width:100%;
+    .banner-logo {
+        max-width: 145px;
+        max-height: 50px;
     }
+
+    .Banner-header {
+        font-size: 35px;    
+        margin-top: 20px;
+    }
+
+    .paragraph {
+        color: #8b9094;
+        font-size: 19px;
+        padding: 23px;
+        height:100px;
+    }
+
 }   
 
 @media (min-width: 320px) and (max-width: 480px) {
@@ -620,7 +706,7 @@ hr {
 /*FAQ Page*/
 
 .faq-banner {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0)0%, rgba(0, 0, 0, 0.06) 10%, rgba(0, 0, 0, 0.15) 22%, rgba(0, 0, 0, 0.72) 75%, rgba(0, 0, 0, 0.84) 89%, rgba(0, 0, 0, 0.91) 100%),url('../images/faq-banner.jpg');
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0)0%, rgba(0, 0, 0, 0.06) 10%, rgba(0, 0, 0, 0.15) 22%, rgba(0, 0, 0, 0.72) 75%, rgba(0, 0, 0, 0.84) 89%, rgba(0, 0, 0, 0.91) 100%),url("images/faq-banner.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
