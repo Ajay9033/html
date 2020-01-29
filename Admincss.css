@@ -1,0 +1,40 @@
+﻿* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav a {
+    font-size: 14px;
+    color: #00acc1;
+    margin: 10px;
+}
+
+nav form p {
+    color: #808080;
+}
+
+.login {
+    font-size: 14px;
+    color: #00acc1;
+    border: 1px solid #00acc1;
+}
+/* form */
+.project-details h1 {
+    color: #808080;
+}
+
+.project-details h2 {
+    font-size: 16px;
+    color: #00acc1;
+}
+.txtarea{
+    resize:none;
+}
+
+
+
+
+
+/*Stepper*/
+

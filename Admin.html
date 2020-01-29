@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <ink href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <script src="wwwroot/lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="signupjs.js"></script>
+    <title>Admin Page</title>
+
+    <link rel="stylesheet" type="text/css" href="Admincss.css">
+
+    <script>
+        function check() {
+            var min = document.getElementById('min').value;
+            var max = document.getElementById('max').value;
+            if (min > max) {
+                alert("Max value Bigger than Min")
+
+            } else {
+            }
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <div class="container-fluid banner">
+        <nav class="navbar navbar-expand-md  border-bottom sticky-top">
+            <img src="images/logo.png" alt="Alternate Text" class="logo" />
+            <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                    aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="images/menu.svg" class="menu" alt="">
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav ml-5 mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link font-weight-bold" href="Organization.html">ORGANIZATION</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  font-weight-bold" href="#">PROJECTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  font-weight-bold" href="#">USERS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  font-weight-bold" href="#">CATEGORES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  font-weight-bold" href="#">ACTIVITES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  font-weight-bold" href="#">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  font-weight-bold" href="#">APPLICATIONS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  font-weight-bold" href="#">CONTACT INQUIRIES</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0 mr-3">
+                    <p class="my-auto ">ajay@gmail.com Currently logged in as :Organization</p>
+                    <button class="login btn my-2 my-sm-0 " type="submit">Login</button>
+                </form>
+            </div>
+
+        </nav>
+
+    </div>
+
+
+    <div class="container">
+
+        <!-- stepper -->
+
+
+      
+        <!--stepper  -->
+
+
+
+
+
+
+        <div class="project-details">
+            <h1>
+                Project Details
+            </h1>
+            <form action="">
+                <div class="">
+                    <div class="row">
+                        <div class="col-6">
+                            <h2>organization</h2>
+                            <select name="theme" id="" class=" form-control  my-auto" required>
+                                <option value="">Pop Wuj - spanish</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+                        <div class="col-6">
+                            <h2>Category</h2>
+                            <select name="theme" id="" class=" form-control  my-auto" required>
+                                <option value="">Volunteer Abroad</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-6">
+                            <h2>Activity</h2>
+                            <select name="theme" id="" class=" form-control  my-auto" required>
+                                <option value="">Human Rights</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+                        <div class="col-6">
+                            <h2>Title</h2>
+                            <input id="" class="form-control" type="text" placeholder="Title" name="" required>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-6">
+                            <h2>Minimum age</h2>
+                            <input type="number" id="min" class="form-control" required placeholder="Min age">
+                        </div>
+                        <div class="col-6">
+                            <h2>Maximum age</h2>
+                            <input type="number" id="max" class="form-control" onfocusout="check()" placeholder="Max age" required>
+
+                        </div>
+                    </div>
+
+                    <div class="row mt-4 mx-auto">
+                        <h2>Overview Description</h2>
+                        <textarea name="" id="" cols="12" class="form-control txtarea" rows="11" required></textarea>
+                    </div>
+
+                    <div class="row mt-4 mx-auto">
+                        <h2>Accomodation Description</h2>
+                        <textarea name="" id="" cols="" class="form-control txtarea" rows="10" required></textarea>
+                    </div>
+                </div>
+                <div class="row text-center mt-4">
+                    <div class="col-12">
+                        <input type="submit" class="btn btn-danger" name="submit" value="Submit">
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</body>
+
+</html>

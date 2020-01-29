@@ -1,0 +1,77 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <script src="wwwroot/lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" type="text/css" href="logincss.css">
+    <script>
+        function validateform() {
+            var name = document.myform.username.value;
+            var password = document.myform.password.value;
+
+            if (name == "ajay" && password == "tatva123") {
+                //alert("Welcome to Volunteer Overseas !!!!");
+                window.location.href = "Admin.html";
+                return false;
+            } else if (password.length < 6) {
+                alert("Password must be at least 6 characters long.");
+                return false;
+            } else {
+                alert(" Please Enter Correct Username and Password");
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="d-flex justify-content-center h-100">
+            <div class="card">
+                <div class="card-header d-flex justify-content-center">
+                    <h5>Welcome to Volunteer Overseas</h5>
+
+                </div>
+                <div class="card-body">
+                    <form name="myform" onsubmit="return validateform()">
+                        <label>Username</label>
+                        <div class="input-group form-group  mb-4">
+
+                            <input type="text" class="form-control" placeholder="username" name="username" required autocomplete="off">
+
+                        </div>
+                        <label>Password</label>
+                        <div class="input-group form-group">
+
+                            <input type="password" class="form-control" placeholder="password" name="password" required>
+                        </div>
+
+                        <div class="form-group d-flex justify-content-center ">
+                            <input type="submit" value="Sign In" class="btn login_btn mt-4">
+                        </div>
+                    </form>
+                </div>
+                <div class="card-footer">
+                    <div class="d-flex justify-content-center links">
+                        <p>Don't have an account?</p> <a href="signup.html">Sign Up</a>
+                    </div>
+                    <!--<div class="d-flex justify-content-center">
+                        <a href="#">Forgot your password?</a>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
